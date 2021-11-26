@@ -5,7 +5,7 @@ function newQuote() {
 		document.querySelector(".person").innerText = quotes[number][1];
 	});
 	fetch("images/images.json").then(response => response.json()).then(images => {
-		document.querySelector("main").setAttribute("style", "background-image: url(images/" + String(~~(Math.random() * images.length)) + ")");
+		document.querySelector("main").setAttribute("style", "background-image: url(images/" + images[String(~~(Math.random() * images.length))] + ")");
 	})
 }
 addEventListener("load", function() {
