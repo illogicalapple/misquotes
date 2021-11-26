@@ -3,3 +3,6 @@ main {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+p.person::before {
+	content: "-";
+}
